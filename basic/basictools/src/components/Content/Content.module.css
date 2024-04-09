@@ -1,0 +1,86 @@
+.bg-opacity-50 {
+    background-color: #ECF5FF;
+}
+
+.bg-light {
+    background-color: #f8f9fa!important;
+}
+
+.text-primary {
+    color: #002147!important;
+}
+
+.luckiest {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .p-5 {
+        padding: 3rem!important;
+    }
+}
+
+.destaque {
+    padding: 30px 0;
+}
+
+.text-primary {
+    color: #002147!important;
+}
+
+.luckiest {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.Mural {
+    background-color: #ECF5FF;
+}
+
+.text-primary {
+    color: #002147!important;
+}
+
+.luckiest {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

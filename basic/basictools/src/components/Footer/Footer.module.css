@@ -1,0 +1,16 @@
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  .social-icons li {
+    display: inline;
+    margin-right: 10px;
+  }
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  .social-icons li a {
+    color: white;
+    font-size: 20px;
+  }
