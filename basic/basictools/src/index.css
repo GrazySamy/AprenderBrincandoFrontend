@@ -1,0 +1,14 @@
+
+
+
+  .navbar-custom {
+    background-image: url('/src/assets/img/header1.png');
+   
+  }
+  .navbar-custom .navbar-brand, .navbar-custom .navbar-nav .nav-link {
+    color: #ffffff; /* Cor dos textos */
+  }
+  .navbar-custom .nav-link:hover {
+    color: #f8f9fa; /* Cor do texto ao passar o mouse */
+  }
+
