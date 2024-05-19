@@ -1,16 +1,11 @@
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-  }
-  .social-icons li {
-    display: inline;
-    margin-right: 10px;
-  }
-  .social-icons li:last-child {
-    margin-right: 0;
-  }
-  .social-icons li a {
-    color: white;
-    font-size: 20px;
-  }
+.vector-div {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(115.1deg, #f5f5f5, #7292cf 36%, #4a90e2 62.78%, #8e34e0 99.23%);
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  height: 309.1px;
+  transform:  rotate(-179.8deg);
+  transform-origin: 0 0;
+}
+

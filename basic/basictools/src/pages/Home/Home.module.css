@@ -1,0 +1,18 @@
+
+
+  
+  
+  @media screen and (max-width:≥992px) {
+    .content {
+      flex-direction: column; /* Para empilhar as imagens em telas menores */
+    }
+
+    .left, .right {   
+        display:contents;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+  }
+
+ 
