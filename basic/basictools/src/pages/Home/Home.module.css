@@ -1,18 +1,131 @@
+/* bainner home */
+.frase1 {
+  margin-top: 20px;
+margin-block: 50px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 10px;
+  font-family:  'Lucida Sans Unicode',  Verdana, sans-serif;
+}
+.frase2 {
+ font-size: 170%;
+  text-align: center;
+  font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight:bolder;
+}
 
 
-  
-  
-  @media screen and (max-width:≥992px) {
-    .content {
-      flex-direction: column; /* Para empilhar as imagens em telas menores */
-    }
+.imgFamilia {
+  width: 400px;
+margin-left: 170px;
+margin-top: 33px;
 
-    .left, .right {   
-        display:contents;
-        align-items: center;
-        margin-top: 20px;
-      }
+}
 
+.bgBainner {
+  background-color: #709BC3;
+  padding-top: 30px;
+  height: 460px;
+}
+
+/*  */
+.mural {
+  background-color: #D6E2F0;
+}
+
+
+.bgCard {
+  background-color: #416e97;
+
+}
+
+/* ButtonGroup.css */
+.btHome {
+  background-color: #042750;
+  color: white;
+  margin-top: 24px;
+  border-radius: 100px;
+  width: 20%;
+  margin-left: 300px;
+}
+
+.btHome:hover {
+  background-color: #2161ab;
+}
+
+.btAfbatezizacao {
+  background-color: #4A90E2;
+  color: white;
+  margin-top: 24px;
+  border-radius: 100px;
+}
+
+.btAfbatezizacao:hover {
+  background-color: #2161ab;
+}
+
+.btCoordenacao {
+  background-color: #FF914D;
+  color: white;
+  border-radius: 100px;
+}
+
+.btCoordenacao:hover {
+  background-color: #d75d11;
+}
+
+
+.btPortugues {
+  background-color: #B954AB;
+  color: white;
+  margin-top: 19px;
+  border-radius: 100px;
+}
+
+.btPortugues:hover {
+  background-color: #972f89;
+}
+
+.btMatematica {
+  background-color: #FFD233;
+  margin-top: 19px;
+  border-radius: 100px;
+}
+
+.btMatematica:hover {
+  background-color: #f5c209;
+}
+
+.btCiencias {
+  background-color: #198754;
+  color: white;
+  margin-top: 19px;
+  border-radius: 100px;
+}
+
+.btCiencias:hover {
+  background-color: #115d3a;
+}
+
+
+
+.bgContainer {
+  background-color: #709BC3;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.textContainer {
+  border-radius: 5px;
+  color: #ffff;
+  text-align: center;
+
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif sans-serif;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    display: none;
+    /* Oculta a imagem em dispositivos móveis */
   }
-
- 
+}

@@ -1,46 +1,51 @@
 import React from 'react'
+import styles from './Login.module.css'
+import { useState, useEffect } from 'react'
+import { userAuthentication } from '../../hooks/userAuthentication'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
-  return (
-    <>
-    <div class="fundologin">
-    <div class="container d-flex justify-content-center align-items-center " styles="min-height: 100vh;">
-        <div class="card login">
-            <span class="text-center text-danger" display-4>@TempData["Mensagem"]</span>
-            <div class="card-body" styles="width: 30rem;">  
-                <h1 class="card-title luckiest"> Login</h1>
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [error, setError] = useState('')
 
-                <form asp-action="Login">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="form-group fs-5">
-                        <label asp-for="Email" class="control-label"></label>
-                        <input asp-for="Email" class="form-control" />
-                        <span asp-validation-for="Email" class="text-danger"></span>
-                    </div>
-                    <div class="form-group fs-5">
-                        <label asp-for="Senha" class="control-label"></label>
-                        <input asp-for="Senha" class="form-control" />
-                        <span asp-validation-for="Senha" class="text-danger"></span>
-                    </div>
-                    <div class="mt-3 fs-5">
-                        <a asp-area="" asp-controller="Usuarios" asp-action="ForgotPassword">Recuperar Senha</a>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="submit" value="Entrar" class="btn btn-primary fs-5" />
-                        <input type="button" value="Cancelar" class="btn btn-danger fs-5" />
-                    </div>
+    const { login, error: authError, loading } = userAuthentication()
+    const navigate = useNavigate()
 
-                    <div class="mt-3 fs-5">
-                        <a asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>
-                    </div>
-                </form>
+    const handlerSubmit = async (e) => {
+        e.prenventDefault()
+        setError('')
+        const user = {
+            email,
+            password
+        }
+        const res = await login(user)
 
-            </div>
-        </div>
-    </div>
-</div>
-    </>
-  )
+        console.table(res)
+        navigate('/post/create')
+    }
+    useEffect(() => {
+        if (authError) {
+            setError(authError)
+        }
+    }, [authError])
+    return (
+        <div className={styles.container}>
+        <form action="#" method="POST" className={styles.form} onSubmit={handlerSubmit}>
+        <font color='red'>{error}</font>
+          <h2>Login</h2> 
+          <div className={styles.group}>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+          </div>
+          <div className={styles.group}>
+            <label>Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    )
 }
-
 export default Login
+

@@ -2,9 +2,11 @@
 import 'react'
 import Navbar from "../Navbar/Navbar"
 
-const Header = () => {
+const Header = ({ cor }) => {
   return (
+    <>
     <Navbar></Navbar>
+    </>
   )
 }
 
