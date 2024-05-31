@@ -1,0 +1,21 @@
+.toggle {
+width: 60px;
+
+}
+
+.toggle:hover {
+    background-color: rgb(78, 145, 212) !important; 
+  }
+
+  .bgHeader  {
+    background-color: #709BC3;
+    
+  }
+
+/* Estilos CSS */
+.custom-dropdown .dropdown-item {
+  color: white !important;
+}
+
+
+

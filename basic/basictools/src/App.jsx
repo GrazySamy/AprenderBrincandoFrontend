@@ -1,8 +1,14 @@
 import './App.css'
+import { BrowserRouter, Routes, Route, Navigate, Form } from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext'
+import { onAuthStateChanged } from 'firebase/auth'
+import { useState, useEffect } from 'react'
+import { userAuthentication } from './hooks/userAuthentication'
+
+
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Home from './pages/Home/Home'
-import { BrowserRouter, Routes, Route, Navigate, Form } from 'react-router-dom'
 import Portugues from './pages/EnsinoFundamental/Portugues/Portugues'
 import Matematica from './pages/EnsinoFundamental/Matematica/Matematica'
 import Ciencias from './pages/EnsinoFundamental/Ciencias/Ciencias'
@@ -13,13 +19,29 @@ import Contato from './pages/Contato/Contato'
 import Login from './pages/Login/Login'
 import Mural from './pages/Mural/Mural'
 
+
 function App() {
+  const [user, setUser] = useState(undefined)
+  const { auth } = userAuthentication()
+
+  const loadingUser = user === undefined
+
+  useEffect(() => {
+    onAuthStateChanged(auth, user => {
+      setUser(user)
+    })
+  }, [auth])
+  if (loadingUser) {
+    return <div className="container load"><img src="" alt="GIf com simbolo de carregando" widht="120px" height="120px"/></div>
+  }
+
+
 
   return (
 <>
+<AuthProvider value={{ user }}>
   <BrowserRouter>
-    <Header />
-    <div className='container'>
+    <Header /> 
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/portugues' element={<Portugues />}></Route>
@@ -32,9 +54,9 @@ function App() {
         <Route path='/login' element={<Login />}></Route>
         <Route path='/mural' element={<Mural />}></Route>
       </Routes>
-    </div>
     <Footer />
   </BrowserRouter>
+  </AuthProvider>
 </>
   )
 }

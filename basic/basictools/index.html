@@ -5,18 +5,42 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="~/lib/lightbox/css/jquery.lbt-lightbox.min.css" />
   <title>Aprender Brincando</title>
 </head>
 
 <body>
+
+
+  <div id="menu" class="container">
+    <i id="menuClick" class="fa fa-bars fs-5" title="Click me!"></i>
+    <ul id="menuOpcoes">
+      <li id="menuOpcao"><a id="menuLink" href="alfabetizacao">Alfabetização</a></li>
+      <li id="menuOpcao"><a id="menuLink" href="coordenacao">Coordenação Motora</a></li>
+      <li id="menuOpcao"><a id="menuLink" href="portugues">Português</a></li>
+      <li id="menuOpcao"><a id="menuLink" href="matematica">Matemática</a></li>
+      <li id="menuOpcao"><a id="menuLink" href="ciencias">Ciências</a></li>
+      <li id="menuOpcao"><a id="menuLink" href="mural">Mural</a></li>
+    </ul>
+  </div>
+
+  
+ <nav class="basic-menu">
+    <a href="login" class="basic-menu-item blue"> <i class="fa fa-user"></i> </a>
+    <a href="contato" class="basic-menu-item green"> <i class="fa fa-envelope"></i> </a>
+    <a href="/" class="basic-menu-item purple"> <i class="fa fa-home"></i> </a>
+ </nav>
+  
+
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="./src/index.js"></script>
 </body>
 
 </html>
