@@ -2,7 +2,7 @@
 #menu {
   text-align:center;
   left:91%;
-  top:30%;
+  top:240px;
   position: absolute;
   transform:translate(-50%,-50%);
   width:100%;
@@ -86,10 +86,9 @@
 .basic-menu {
   margin: auto;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 20px;
+  left: 0%;
+  right: 0%;
   width: 80px; 
   height: 80px;
   text-align: center;
@@ -106,7 +105,7 @@
   background-color: #669AE1;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  -webkit-transform: translate3d(70px, -300px, 0);
+  left: 80px;
 }
 
 .blue:hover {
@@ -118,7 +117,7 @@
   background-color: #70CC72;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  -webkit-transform: translate3d(-30px, -300px, 0);
+  left: 0px;
 }
 
 .green:hover {
@@ -130,7 +129,7 @@
   background-color: #C49CDE;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  -webkit-transform: translate3d(-130px, -300px, 0);
+  left: -80px;
 }
 
 .purple:hover {
