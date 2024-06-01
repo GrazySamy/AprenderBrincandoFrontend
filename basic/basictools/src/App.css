@@ -1,52 +1,55 @@
-.faixa-home {
-    background-color: #709BC3;
-
-}
-
 .faixa-coordenacao {
-    background-color: #f8ddcd;
-    color: #CE560B;
+    background-color: #fc782c;
+    color: #fbddce;
     padding: 100px;
 }
 
 .faixa-alfabetizacao {
-    background-color: #98C5FA;
-    color: #0940A9;
+    background-color: #184ec2;
+    color: #a4c2f5;
     padding: 100px;
 }
 
 .faixa-portugues {
-    background-color: #b27de4;
-    color: #550a9b;
+    background-color: #7c13df;
+    color: #eee1fa;
     padding: 100px;
 }
 
 .faixa-matematica {
-    background-color: #f17d83;
-    color: #C70611;
+    background-color: hsl(47, 100%, 60%);
+    color: #795f01;
     padding: 100px;
 }
 
 .faixa-ciencias {
-    background-color: #73c29d;
-    color: #165135;
+    background-color: #157e4f;
+    color: #a4f5d0;
     padding: 100px;
 }
 
 .faixa-sobre {
-    background-color: #98C5FA;
-    color: #0940A9;
+    background-color: #709BC3;
+    color: #f1f3f5;
     padding: 100px;
 }
 
 .faixa-mural {
-    background-color: #98C5FA;
-    color: #0940A9;
+    background-color: #709BC3;
+    color: #f1f3f5;
     padding: 100px;
+    background-size: cover;
+
 }
 
 .faixa-contato {
-    background-color: #98C5FA;
-    color: #0940A9;
+    background-color: #709BC3;
+    color: #f1f3f5;
+    padding: 100px;
+}
+
+.faixa-login {
+    background-color: #709BC3;
+    color: #f1f3f5;
     padding: 100px;
 }
