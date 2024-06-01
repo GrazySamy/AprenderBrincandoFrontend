@@ -3,6 +3,7 @@ import styles from './Login.module.css'
 import { useState, useEffect } from 'react'
 import { userAuthentication } from '../../hooks/userAuthentication'
 import { useNavigate } from 'react-router-dom'
+import FaixaTitulo from '../../components/FaixaTitulo/FaixaTitulo'
 
 const Login = () => {
     const [email, setEmail] = useState('')
@@ -30,21 +31,20 @@ const Login = () => {
         }
     }, [authError])
     return (
-        <div className={styles.container}>
-        <form action="#" method="POST" className={styles.form} onSubmit={handlerSubmit}>
-        <font color='red'>{error}</font>
-          <h2>Login</h2> 
-          <div className={styles.group}>
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
-          </div>
-          <div className={styles.group}>
-            <label>Senha</label>
-            <input type="password" id="password" name="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
-          </div>
-          <button type="submit">Entrar</button>
-        </form>
-      </div>
+<>
+      <FaixaTitulo colorClass="faixa-login" titulo="" subtitulo="Login" />
+
+      <div class="row mt-5">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <form>
+                        <input type="text" placeholder=' Digite seu nome' required />
+                        <input type="email" placeholder=' Digite seu email' required />
+                        <input type="submit" value="Enviar" />
+                    </form>
+                </div>
+            </div>
+            </>
     )
 }
 export default Login

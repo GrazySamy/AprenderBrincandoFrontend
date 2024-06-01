@@ -7,25 +7,12 @@ const Home = () => {
 
   return (
     <>
-
-      {/*<div class="row" className={styles.bgContainer}>
-        <div className={styles.container}>
-          <div class="col-md-12 p-3 text-center"className={styles.bgContainer}>
-            <div className={styles.textContainer}>
-              <h1>BEM VINDOS!</h1>
-              <p class="fw-bolder fs-1 text-uppercase">Prontos para uma aventura cheia de diversão e aprendizado?</p>
-              <h1 class="text-lowercase">VENHA CRIAR MEMÓRIAS INCRÍVEIS COM SEUS PEQUENOS COMPANHEIROS DE JORNADA</h1>
-            </div>
-          </div>
-        </div>
-  </div>*/}
-
       <section class="bainner">
         <div className={styles.bgBainner}>
           <div class="row">
-            <div class="col-md-4">
-              <img src="src/assets/img/FFF.png" className={styles.imgFamilia} alt="..." />
-            </div>
+          <div class="col-md-4 d-none d-md-block">
+        <img src="src/assets/img/FFF.png" className={styles.imgFamilia} alt="..." />
+      </div>
             <div class="col-md-6 m-5 p-5">
               <h1 className={styles.frase1}>Bem Vindos ao Aprender Bincando!</h1>
             <p className={styles.frase2}>PRONTOS PARA UMA AVENTURA<br/>CHEIA DE DIVERSÃO E APRENDIZADO?</p>
@@ -33,8 +20,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-    
-
 
       <section class="categorias">
         <div class="container">
