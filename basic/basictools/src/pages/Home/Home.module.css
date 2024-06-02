@@ -40,71 +40,83 @@ margin-top: 33px;
 }
 
 /* ButtonGroup.css */
-.btHome {
-  background-color: #042750;
-  color: white;
+.btAlfabetizacao {
+  background-color: #184ec2;
+  color: #ffffff;
   margin-top: 24px;
   border-radius: 100px;
-  width: 20%;
-  margin-left: 300px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
-.btHome:hover {
-  background-color: #2161ab;
-}
-
-.btAfbatezizacao {
-  background-color: #4A90E2;
-  color: white;
-  margin-top: 24px;
-  border-radius: 100px;
-}
-
-.btAfbatezizacao:hover {
-  background-color: #2161ab;
+.btAlfabetizacao:hover {
+  background-color: #184ec2;
+  opacity: 80%;
 }
 
 .btCoordenacao {
-  background-color: #FF914D;
-  color: white;
+  background-color: #fc782c;
+  color: #ffffff;
   border-radius: 100px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .btCoordenacao:hover {
-  background-color: #d75d11;
+  background-color: #fc782c;
+  opacity: 80%;
 }
 
 
 .btPortugues {
-  background-color: #B954AB;
+  background-color: #7c13df;
   color: white;
   margin-top: 19px;
-  border-radius: 100px;
+  border-radius: 100px;  
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .btPortugues:hover {
-  background-color: #972f89;
+  background-color: #7c13df;
+  opacity: 80%;
 }
 
 .btMatematica {
   background-color: #FFD233;
   margin-top: 19px;
   border-radius: 100px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .btMatematica:hover {
-  background-color: #f5c209;
+  background-color: #FFD233;
+  opacity: 80%;
 }
 
 .btCiencias {
-  background-color: #198754;
+  background-color: #157e4f;
   color: white;
   margin-top: 19px;
   border-radius: 100px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .btCiencias:hover {
-  background-color: #115d3a;
+  background-color: #157e4f;
+  opacity: 80%;
 }
 
 
@@ -129,3 +141,5 @@ margin-top: 33px;
     /* Oculta a imagem em dispositivos móveis */
   }
 }
+
+
