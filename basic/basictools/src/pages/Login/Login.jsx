@@ -14,16 +14,16 @@ const Login = () => {
     const navigate = useNavigate()
 
     const handlerSubmit = async (e) => {
-        e.prenventDefault()
         setError('')
         const user = {
             email,
             password
         }
+
         const res = await login(user)
 
         console.table(res)
-        navigate('/post/create')
+        navigate('/')
     }
     useEffect(() => {
         if (authError) {
@@ -31,20 +31,25 @@ const Login = () => {
         }
     }, [authError])
     return (
-<>
-      <FaixaTitulo colorClass="faixa-login" titulo="" subtitulo="Login" />
+        <>
+            <FaixaTitulo colorClass="faixa-login" titulo="" subtitulo="Login" />
 
-      <div class="row mt-5">
+            <div class="row mt-5">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <form>
-                        <input type="text" placeholder=' Digite seu nome' required />
-                        <input type="email" placeholder=' Digite seu email' required />
-                        <input type="submit" value="Enviar" />
+                    <form onSubmit={handlerSubmit}>
+                        <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder=' Digite seu email' required />
+                        <input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder=' Digite sua senha' required />
+                        
+
+                        {!loading && <input type="submit" value="Enviar" />}
+                        {loading && <input type="submit" value="Enviar" disabled />}
+                        {error && <p className='error'>{error}</p>}
+
                     </form>
                 </div>
             </div>
-            </>
+        </>
     )
 }
 export default Login

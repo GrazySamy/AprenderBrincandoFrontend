@@ -28,6 +28,7 @@ export const userAuthentication = () =>{
         setError(null)
 
         try{
+
             const { user } = await createUserWithEmailAndPassword(
                 auth,
                 data.email,
@@ -67,15 +68,19 @@ export const userAuthentication = () =>{
     }
 
     const login = async (data) =>{
+        
         checkIfIsCancelled()
         
         setLoading(true)
         setError(false)
 
         try{
+            alert('USUARIO LOGANDO: '+ data.email + ' ' + data.password);
             await signInWithEmailAndPassword(auth, data.email, data.password)
             setLoading(false)
+            alert('USUARIO LOGADO');
         }catch(error){
+            alert('ERRO NO LOGIN: ' + error.message);
             console.error(error.message)
             console.table(typeof error.message)
 

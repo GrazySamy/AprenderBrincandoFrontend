@@ -4,18 +4,17 @@ import { getAnalytics } from 'firebase/analytics'
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDCEqJCjxF8mADhmKhnrFfeKk9Lp7B8Fi8",
-    authDomain: "minidevbloganaliv.firebaseapp.com",
-    projectId: "minidevbloganaliv",
-    storageBucket: "minidevbloganaliv.appspot.com",
-    messagingSenderId: "441612330617",
-    appId: "1:441612330617:web:7cec9aadbe4ce3daea16a8",
-    measurementId: "G-PWDBLNVBEP"
-  }
+  apiKey: "AIzaSyDqOcOzCnOr3RNdeIV8rQ48l1WT8yUwDkY",
+  authDomain: "aprenderbrincandofrontend.firebaseapp.com",
+  projectId: "aprenderbrincandofrontend",
+  storageBucket: "aprenderbrincandofrontend.appspot.com",
+  messagingSenderId: "233591297522",
+  appId: "1:233591297522:web:9ace5b426836bbcd15476b"
+};
 
-  const app = initializeApp(firebaseConfig)
-  const analytics = getAnalytics(app)
-  const db = getFirestore(app)
+const app = initializeApp(firebaseConfig)
+const analytics = getAnalytics(app)
+const db = getFirestore(app)
 
-  export {db}
- 
+export { db }
+

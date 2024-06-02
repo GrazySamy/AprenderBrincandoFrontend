@@ -1,6 +1,16 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+import UserProfile from '../UserProfile/UserProfile';
 
 function Navbar() {
+
+  const handleLogout = () => {
+    // Lógica de logout aqui, por exemplo, limpar o token de autenticação
+    console.log('Usuário deslogado');
+  };
+
+  const user = {
+    avatar: 'src/assets/img/logado.png'
+  };
 
   const menuClickRef = useRef(null);
   const menuOpcoesRef = useRef(null);
@@ -40,7 +50,7 @@ function Navbar() {
       </div>
 
       <nav class="basic-menu">
-        <a href="login" class="basic-menu-item blue"> <i class="fa fa-user"></i> </a>
+        <span class="basic-menu-item blue"> <UserProfile user={user}  onLogout={handleLogout} /> </span>
         <a href="contato" class="basic-menu-item green"> <i class="fa fa-envelope"></i> </a>
         <a href="/" class="basic-menu-item purple"> <i class="fa fa-home"></i> </a>
       </nav>
