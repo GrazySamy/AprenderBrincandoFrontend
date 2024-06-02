@@ -36,7 +36,7 @@ const Home = () => {
               <div class="card-body text-center">
                 <h6 class="card-title my-1">ALFABETIZAÇÃO</h6>
                 <a href="/afbatezizacao">
-                  <button className={styles.btAfbatezizacao}>Saiba Mais</button>
+                  <button className={styles.btAfbatezizacao}>Explorar</button>
                 </a>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Home = () => {
               <div class="card-body text-center">
                 <h6 class="card-title luckiest">COORDENAÇÃO MOTORA</h6>
                 <a href="/coordenacao">
-                  <button className={styles.btCoordenacao}>Saiba Mais</button>
+                  <button className={styles.btCoordenacao}>Explorar</button>
                 </a>
               </div>
             </div>
@@ -56,7 +56,7 @@ const Home = () => {
               <div class="card-body text-center">
                 <h6 class="card-title luckiest">PORTUGUÊS</h6>
                 <a href="/portugues">
-                  <button className={styles.btPortugues}>Saiba Mais</button>
+                  <button className={styles.btPortugues}>Explorar</button>
                 </a>
               </div>
             </div>
@@ -66,7 +66,7 @@ const Home = () => {
               <div class="card-body text-center">
                 <h6 class="card-title luckiest">MATEMÁTICA</h6>
                 <a href="/matematica">
-                  <button className={styles.btMatematica}>Saiba Mais</button>
+                  <button className={styles.btMatematica}>Explorar</button>
                 </a>
               </div>
             </div>
@@ -76,7 +76,7 @@ const Home = () => {
               <div class="card-body text-center">
                 <h6 class="card-title luckiest">CIÊNCIA</h6>
                 <a href="/ciencias">
-                  <button className={styles.btCiencias}>Saiba Mais</button>
+                  <button className={styles.btCiencias}>Explorar</button>
                 </a>
               </div>
             </div>
