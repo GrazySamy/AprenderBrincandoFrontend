@@ -1,6 +1,16 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+import UserProfile from '../UserProfile/UserProfile';
+import { userAuthValue } from '../../context/AuthContext'
+import { userAuthentication } from '../../hooks/userAuthentication'
 
 function Navbar() {
+
+  const { user } = userAuthValue();
+  const { logout } = userAuthentication();
+
+  const avatar = {
+    avatar: 'src/assets/img/logado.png'
+  };
 
   const menuClickRef = useRef(null);
   const menuOpcoesRef = useRef(null);
@@ -40,7 +50,8 @@ function Navbar() {
       </div>
 
       <nav class="basic-menu">
-        <a href="login" class="basic-menu-item blue"> <i class="fa fa-user"></i> </a>
+        { user && (<span class="basic-menu-item blue"> <UserProfile user={avatar}  onLogout={logout} /> </span>) }
+        { !user && (<a href="login" class="basic-menu-item blue"> <i class="fa fa-user"></i> </a>) }
         <a href="contato" class="basic-menu-item green"> <i class="fa fa-envelope"></i> </a>
         <a href="/" class="basic-menu-item purple"> <i class="fa fa-home"></i> </a>
       </nav>
