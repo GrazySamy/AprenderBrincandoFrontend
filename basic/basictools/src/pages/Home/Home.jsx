@@ -35,8 +35,8 @@ const Home = () => {
               <img src="src/assets/img/alfabetização.png" class="card-img-top" alt="..." />
               <div class="card-body text-center">
                 <h6 class="card-title my-1">ALFABETIZAÇÃO</h6>
-                <a href="/afbatezizacao">
-                  <button className={styles.btAfbatezizacao}>Explorar</button>
+                <a href="/alfabetizacao">
+                  <button className={styles.btAlfabetizacao}>Saiba Mais</button>
                 </a>
               </div>
             </div>
