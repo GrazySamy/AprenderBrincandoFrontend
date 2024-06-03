@@ -18,6 +18,7 @@ import Sobre from './pages/Sobre/Sobre'
 import Contato from './pages/Contato/Contato'
 import Login from './pages/Login/Login'
 import Mural from './pages/Mural/Mural'
+import loading from './assets/img/Loading.gif'
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
     })
   }, [auth])
   if (loadingUser) {
-    return <div className="container load"><img src="" alt="GIf com simbolo de carregando" widht="120px" height="120px"/></div>
+    return <div className="container load"><img src={loading} alt="GIf com simbolo de carregando" widht="120px" height="120px"/></div>
   }
 
 
