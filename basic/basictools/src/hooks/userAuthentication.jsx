@@ -75,27 +75,26 @@ export const userAuthentication = () =>{
         setError(false)
 
         try{
-            alert('USUARIO LOGANDO: '+ data.email + ' ' + data.password);
             await signInWithEmailAndPassword(auth, data.email, data.password)
             setLoading(false)
-            alert('USUARIO LOGADO');
+            return true;
         }catch(error){
-            alert('ERRO NO LOGIN: ' + error.message);
             console.error(error.message)
             console.table(typeof error.message)
 
             let systemErrorMessage
 
-            if(error.message.includes("invalid-login-credentials")){
-                systemErrorMessage = "Este usuário não está cadastrado"
+            if(error.message.includes("invalid-login-credentials") || error.message.includes("invalid-credential")){
+                systemErrorMessage = "Usuário não cadastrado"
             }else if(error.message.includes("wrong-password")){
-                systemErrorMessage = "Há erro com suas credenciais."
+                systemErrorMessage = "Credenciais incorretas"
             }else{
                 systemErrorMessage = "Ocorreu um error, tente novamente mais tarde"
             }
             
             setLoading(false)
             setError(systemErrorMessage) 
+            return false;
         }
     }
 

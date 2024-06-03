@@ -1,0 +1,41 @@
+  .cardLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+  }
+  
+  .formLogin {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .groupLogin {
+    margin-bottom: 20px;
+  }
+  
+  .formLogin button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7E587E;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .formLogin button:hover {
+    background-color: #C8A2C8;
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+    font-style: italic;
+  }

@@ -1,14 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react'
 import UserProfile from '../UserProfile/UserProfile';
+import { userAuthValue } from '../../context/AuthContext'
+import { userAuthentication } from '../../hooks/userAuthentication'
 
 function Navbar() {
 
-  const handleLogout = () => {
-    // Lógica de logout aqui, por exemplo, limpar o token de autenticação
-    console.log('Usuário deslogado');
-  };
+  const { user } = userAuthValue();
+  const { logout } = userAuthentication();
 
-  const user = {
+  const avatar = {
     avatar: 'src/assets/img/logado.png'
   };
 
@@ -50,7 +50,8 @@ function Navbar() {
       </div>
 
       <nav class="basic-menu">
-        <span class="basic-menu-item blue"> <UserProfile user={user}  onLogout={handleLogout} /> </span>
+        { user && (<span class="basic-menu-item blue"> <UserProfile user={avatar}  onLogout={logout} /> </span>) }
+        { !user && (<a href="login" class="basic-menu-item blue"> <i class="fa fa-user"></i> </a>) }
         <a href="contato" class="basic-menu-item green"> <i class="fa fa-envelope"></i> </a>
         <a href="/" class="basic-menu-item purple"> <i class="fa fa-home"></i> </a>
       </nav>
