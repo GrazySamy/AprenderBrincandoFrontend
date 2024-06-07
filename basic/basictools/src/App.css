@@ -1,55 +1,63 @@
 .faixa-coordenacao {
     background-color: #fc782c;
     color: #fbddce;
-    padding: 100px;
+    padding: 50px;
+    margin-top: 80px;
 }
 
 .faixa-alfabetizacao {
     background-color: #184ec2;
     color: #a4c2f5;
-    padding: 100px;
+    margin-top: 80px;
+    padding: 50px;
 }
 
 .faixa-portugues {
     background-color: #7c13df;
     color: #eee1fa;
-    padding: 100px;
+    padding: 50px;
+    margin-top: 80px;
 }
 
 .faixa-matematica {
     background-color: #FFD233;
     color: #795f01;
-    padding: 100px;
+    padding: 50px;
+    margin-top: 80px;
 }
 
 .faixa-ciencias {
     background-color: #157e4f;
     color: #a4f5d0;
-    padding: 100px;
+    padding: 50px;
+    margin-top: 80px;
 }
 
 .faixa-sobre {
     background-color: #709BC3;
     color: #f1f3f5;
-    padding: 100px;
+    padding: 50px;
+    margin-top: 80px;
 }
 
 .faixa-mural {
     background-color: #709BC3;
     color: #f1f3f5;
-    padding: 100px;
+    padding: 50px;
     background-size: cover;
-
+    margin-top: 80px;
 }
 
 .faixa-contato {
     background-color: #709BC3;
     color: #f1f3f5;
-    padding: 100px;
+    padding: 50px;
+    margin-top: 80px;
 }
 
 .faixa-login {
     background-color: #709BC3;
     color: #f1f3f5;
-    padding: 100px;
+    padding: 50px;
+    margin-top: 80px;
 }

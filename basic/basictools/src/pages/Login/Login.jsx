@@ -35,7 +35,7 @@ const Login = () => {
 
       <FaixaTitulo colorClass="faixa-login" titulo="" subtitulo="Login" />
 
-      <div className={styles.cardLogin}>
+      {/*<div className={styles.cardLogin}>
         <form action="#" method="POST" className={styles.formLogin} onSubmit={handlerSubmit}>
           {error && <div className={styles.error}>{error}</div>}
           <div className={styles.groupLogin}>
@@ -46,7 +46,36 @@ const Login = () => {
           </div>
           <button type="submit">Entrar</button>
         </form>
+      </div>*/}
+
+      <div className={styles.login}>
+        <div class="card w-25 mx-auto">
+          <form className={styles.form} action="#" method="POST" onSubmit={handlerSubmit} >
+            {error && <div className={styles.error}>{error}</div>}
+            
+            <div class="row">
+
+              <div class="col-md-12 mt-4">
+                <input class="form-control" type="email" id="email" name="email" placeholder="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 mt-2">
+                <input class="form-control" type="password" id="password" name="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} required />
+              </div>
+            </div>
+
+           
+              <div class="text-center mt-4 mb-5">
+                <button class="btn btn-outline-primary">Enviar Mensagem</button>
+              </div>
+          
+          </form>
+        </div>
       </div>
+
+
+
     </>
   )
 }

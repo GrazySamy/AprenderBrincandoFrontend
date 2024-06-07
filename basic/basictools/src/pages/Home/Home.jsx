@@ -7,15 +7,14 @@ const Home = () => {
 
   return (
     <>
-      <section class="bainner">
-        <div className={styles.bgBainner}>
-          <div class="row">
-          <div class="col-md-4 d-none d-md-block">
-        <img src="src/assets/img/FFF.png" className={styles.imgFamilia} alt="..." />
-      </div>
-            <div class="col-md-6 m-5 p-5">
-              <h1 className={styles.frase1}>Bem Vindos ao Aprender Bincando!</h1>
-            <p className={styles.frase2}>PRONTOS PARA UMA AVENTURA<br/>CHEIA DE DIVERSÃO E APRENDIZADO?</p>
+
+      <section className={styles.bgHome}>
+        <div class="container">
+          <div class="row align-items-center py-4 mt-5">
+            <div class="col-md-12 text-center">
+            <h1 class="fw-bolder text-white opacity-75 mt-5">Bem Vindos ao</h1>
+              <h1 class="fw-bolder text-white opacity-75 pt-3">APRENDER BRINCANDO</h1>
+              <p class="fs-2 fw-bolder text-white opacity-75 pt-3">Pronto para AVENTURAS cheias de aprendizado?</p>
             </div>
           </div>
         </div>
@@ -36,7 +35,7 @@ const Home = () => {
               <div class="card-body text-center">
                 <h6 class="card-title my-1">ALFABETIZAÇÃO</h6>
                 <a href="/alfabetizacao">
-                  <button className={styles.btAlfabetizacao}>Saiba Mais</button>
+                  <button className={styles.btAlfabetizacao}>Explorar</button>
                 </a>
               </div>
             </div>
@@ -84,62 +83,33 @@ const Home = () => {
         </div>
       </section>
 
-
-      <section >
+      <section class="mural">
         <div className={styles.mural}>
           <div class="row mt-4">
-            <div class="col-md-12 text-center mt-5">
+            <div class="col-md-12 text-center mt-5 pt-3">
               <h3 class="fs-4">DESTAQUES</h3>
-              <h1 class="fw-bolder" href="mural">Mural</h1>
-            </div>
-          </div>
-
-          <div class="row p-4">
-            <div class="col-md-2 text-center p-3 mt-3">
-              <img src="assets/img/c1.png" class="img-fluid" alt="..." width="100" height="100" />
-
-              <div class="mt-2">
-                <h3 class="fs-6">texto</h3>
+              <h1 class="fw-bolder mb-5" href="mural">Mural</h1>
+              <div class="row justify-content-center">
+                <div class="col-md-3 card" className={styles.tamanhoCard}>
+                  <img src="src/assets/img/vulcao.webp" class="card-img-top" alt="..." className={styles.tamanhoImg} />
+                </div>
+                <div class="col-md-3 card" className={styles.tamanhoCard}>
+                  <img src="src/assets/img/letras.webp" class="card-img-top" alt="..." className={styles.tamanhoImg} />
+                </div>
+                <div class="col-md-3 card" className={styles.tamanhoCard}>
+                  <img src="src/assets/img/detergente.jpg" class="card-img-top" alt="..." className={styles.tamanhoImg} />
+                </div>
+                <div class="col-md-3 card" className={styles.tamanhoCard}>
+                  <img src="src/assets/img/recorte.webp" class="card-img-top" alt="..." className={styles.tamanhoImg} />
+                </div>
               </div>
             </div>
-            <div class="col-md-2 text-center p-3 mt-3">
-              <img src="assets/img/c2.png" class="img-fluid" alt="..." width="100" height="100" />
-
-              <div class="mt-2">
-                <h3 class="fs-6">texto</h3>
+            <div class="row">
+              <div class="col-md-12 mt-3 mb-4 text-center">
+              <a href="/mural">
+                  <button className={styles.btMural}>Explorar</button>
+                </a>
               </div>
-            </div>
-            <div class="col-md-2 text-center p-3 mt-3">
-              <img src="assets/img/c3.png" class="img-fluid" alt="..." width="100" height="100" />
-
-              <div class="mt-2">
-                <h3 class="fs-6">texto</h3>
-              </div>
-            </div>
-            <div class="col-md-2 text-center p-3 mt-3">
-              <img src="assets/img/c4.png" class="img-fluid" alt="..." width="100" height="100" />
-
-              <div class="mt-2">
-                <h3 class="fs-6">texto</h3>
-              </div>
-            </div>
-            <div class="col-md-2 text-center p-3 mt-3">
-              <img src="assets/img/c5.png" class="img-fluid" alt="..." width="100" height="100" />
-
-              <div class="mt-2">
-                <h3 class="fs-6">texto</h3>
-              </div>
-            </div>
-            <div class="col-md-2 text-center p-3 mt-3">
-              <img src="assets/img/c6.png" class="img-fluid" alt="..." width="100" height="100" />
-
-              <div class="mt-2">
-                <h3 class="fs-6">texto</h3>
-              </div>
-            </div>
-
-            <div class="col-md-12 text-center mt-5">
-
             </div>
           </div>
         </div>
@@ -152,12 +122,9 @@ const Home = () => {
               <img src="assets/img/sobre2.png" class="img-fluid" alt="..." />
             </div>
             <div class="col-md-6 p-3">
-              <h3 class="fs-6">TEXTO</h3>
-              <h1 class="fw-bolder">Sobre Nós</h1>
-              <p>texto texto</p>
-              <p>texto texto</p>
+              <h1 class="fw-bolder mb-4">Sobre Nós</h1>
+              <p className={styles.fraseSobre}>Somos dedicados a estimular a educação infantil com atividades divertidas e educativas que você pode fazer com seus filhos. Nossa missão é fortalecer os laços familiares e promover o desenvolvimento das crianças através de vídeos envolventes e lúdicos. Junte-se a nós e transforme o aprendizado em uma aventura emocionante para toda a família!</p>
             </div>
-
           </div>
         </div>
       </section>

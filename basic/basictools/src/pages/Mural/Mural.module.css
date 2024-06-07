@@ -1,13 +1,51 @@
-.img {
-    width: 250px;
-    margin: 10px 10px 10px 10px;
+.carouselContainer {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Defina a largura máxima do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel na página */
+    position: relative;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   
 }
 
-.container {
-
+.carousel {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-   
-  }
+    transition: transform 0.5s ease;
+    width: 50%;
+    gap: 10px;
+    scroll-behavior: smooth; /* Adiciona uma transição suave ao rolar */
+}
+
+.carousel img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.carouselButton.prev {
+    left: 0;
+}
+
+.carouselButton.next {
+    right: 0;
+}
+
+/* Para tornar o carrossel responsivo */
+@media screen and (max-width: 600px) {
+    .carouselContainer {
+        max-width: 100%;
+    }
+}

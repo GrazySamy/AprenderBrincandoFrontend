@@ -38,4 +38,20 @@
     color: red;
     text-align: center;
     font-style: italic;
+    margin-top: 10px;
+  }
+
+
+
+
+/* Novo login*/
+
+  .login {
+    background-color: #e1eaf4;
+  padding: 70px;
+  }
+  .form {
+    width: 100%;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
   }
