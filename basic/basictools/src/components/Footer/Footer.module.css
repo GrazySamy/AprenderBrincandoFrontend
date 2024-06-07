@@ -1,14 +1,17 @@
 .footer {
-  background-color: #709BC3; 
- }
+  background-color: #709BC3;
+}
 
- .paragrafo{
-  font-family: 'Lucida Sans Unicode',  Verdana, sans-serif;
-  font-size: 20px;
-  text-align: 20px;
-  }
+.paragrafo {
+  font-family: 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
 
-  .redessociais{
-    font-size: 20px;
-    text-align: 20px;
-   }
+.freepik {
+  text-align: right;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bolder;
+}

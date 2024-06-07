@@ -1,24 +1,26 @@
 import React from 'react'
+import styles from './Sobre.module.css'
 import FaixaTitulo from '../../components/FaixaTitulo/FaixaTitulo'
 
 const Sobre = () => {
   return (
     <>
+      <FaixaTitulo colorClass="faixa-sobre" titulo="QUEM SOMOS" subtitulo="Sobre Nós" />
 
-      <div class="container-fluid mb-5">
-        <div class="row">
-          <div styles="width: 50%; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
-            <h1 class="text-center luckiest fs-1 py-5" styles="color: #002147"> BEM VINDO AO APRENDER BRINCANDO</h1>
-            <p class="fs-5 fw-bolder text-center"> Dedicamo-nos a apoiar pais e educadores na formação de seus filhos e alunos.</p>
-            <p class="fs-5 fw-bolder text-center"> Nosso propósito é criar um ambiente educativo cativante e estimulante, no qual as crianças possam absorver conhecimento de maneira significativa, cultivar habilidades essenciais e despertar uma sede genuína pelo aprendizado. Reconhecemos que os primeiros anos de vida e a educação fundamental são cruciais para o desenvolvimento e sucesso futuro de cada criança.</p>
-            <p class="fs-5 fw-bolder text-center"> Convidamos você a embarcar conosco nessa emocionante jornada de descobertas e crescimento! Porque, para nós, aprender não é uma  tarefa, é uma aventura!</p>
-           
-            <p class="fs-5 fw-bolder text-center"> Dedicamo-nos a apoiar pais e educadores na formação de seus filhos e alunos.</p>
-            <p class="fs-5 fw-bolder text-center"> Nosso propósito é criar um ambiente educativo cativante e estimulante, no qual as crianças possam absorver conhecimento de maneira significativa, cultivar habilidades essenciais e despertar uma sede genuína pelo aprendizado. Reconhecemos que os primeiros anos de vida e a educação fundamental são cruciais para o desenvolvimento e sucesso futuro de cada criança.</p>
-            <p class="fs-5 fw-bolder text-center"> Convidamos você a embarcar conosco nessa emocionante jornada de descobertas e crescimento! Porque, para nós, aprender não é uma  tarefa, é uma aventura!</p>
+      <div class="container">
+          <div class="row align-items-center py-5">
+            <div class="col-md-12 p-3">           
+              <h2 class="fw-bolder">Nossa Missão</h2>
+              <p className={styles.missao}>Bem-vindo ao Aprender brincando, um espaço dedicado a estimular a educação infantil através de atividades divertidas e envolventes que os pais podem realizar com seus filhos. Nossa missão é proporcionar recursos educativos de alta qualidade que fortaleçam os laços familiares, incentivem a aprendizagem e promovam o desenvolvimento integral das crianças.</p>
+              <h2 class="fw-bolder">Nossa Visão</h2>
+              <p className={styles.visao}>Acreditamos que a educação infantil é a base para um futuro brilhante. Nossa visão é criar um ambiente onde pais e filhos possam explorar juntos o mundo do conhecimento, cultivando a curiosidade, a criatividade e o amor pelo aprendizado desde cedo. Entendemos que uma relação positiva entre pais e filhos na infância contribui significativamente para o desenvolvimento emocional, social e intelectual das crianças, preparando-as para um futuro cheio de possibilidades e sucesso.</p>
+              <h2 class="fw-bolder">Nossos Valores</h2>
+              <p className={styles.valor}>Educação de Qualidade: Comprometemo-nos a oferecer conteúdos educativos, criativos e eficazes.</p>
+              <p className={styles.valor}>Diversão e Aprendizado: Acreditamos que a aprendizagem deve ser divertida. Nossas atividades são lúdicas e estimulantes.</p>
+              <p className={styles.valor}>Família: Reconhecemos o papel crucial dos pais e cuidadores no desenvolvimento infantil e trabalhamos para apoiá-los nesse papel.</p>
+            </div>
           </div>
         </div>
-      </div>
 
     </>
   )

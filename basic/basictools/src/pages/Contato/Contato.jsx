@@ -7,7 +7,7 @@ const Contato = () => {
         <>
             <FaixaTitulo colorClass="faixa-contato" titulo="" subtitulo="Contato" />
 
-            <div class="row mt-5">
+            {/*} <div class="row mt-5">
                 <div class="col-4"></div>
                 <div class="col-4">
                     <form>
@@ -17,8 +17,38 @@ const Contato = () => {
                         <input type="submit" value="Enviar" />
                     </form>
                 </div>
+            </div>*/}
+
+
+            <div className={styles.contato}>
+                <div class="card w-50 mx-auto">
+                    <form className={styles.form}>
+                        <div class="row">
+                            <div class=" col-md-6 mt-5">
+                                <input type="text" class="form-control" placeholder="Nome completo" aria-label="First name" />
+                            </div>
+                            <div class="col-md-6 mt-5">
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Last name" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mt-2">
+                                <input type="text" class="form-control" placeholder="Assunto" aria-label="Last name" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mt-2">
+                                <textarea type='text' class="form-control" placeholder="Digite sua mensagem aqui" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center mt-4 mb-5">
+                                <button class="btn btn-outline-primary">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            
         </>
     )
 }

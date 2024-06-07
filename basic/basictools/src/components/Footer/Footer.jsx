@@ -9,27 +9,29 @@ const Footer = () => {
         <>
             <footer className={styles.footer}>
                 <div class="container">
-                    <div class="row py-5">
+                    <div class="row text-white fs-6 pt-4">
+                        <p className={styles.paragrafo}>Aprender não é uma tarefa, é uma AVENTURA!</p>
+                    </div>
 
-                        <div class="col-md-6 mt-3 text-white fw-bolder fs-6">
-                           <img src="src/assets/img/logosfundo.png" width="100" height="100" />
-                            <p className={styles.paragrafo}>Aprender não é uma tarefa, é uma AVENTURA!</p>
-                        </div>
+                    <div class="row fw-bolder pb-4">
+                        <span>REDES SOCIAIS</span>
+                    </div>
 
-                        <div class="col-md-6 mt-3">
-                            <h3 class="fs-6 ms-3"  className={styles.redessociais}>REDES SOCIAIS</h3>
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link text-white fs-3" aria-current="page" href="#"><i
-                                        class="bi bi-facebook"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white fs-3" href="#"><i class="bi bi-twitter"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white fs-3" href="#"><i class="bi bi-instagram"></i></a>
-                                </li>
-                            </ul>
+                    <div class="row">
+                        <ul class="nav col-6 mb-4">
+                            <li class="nav-item">
+                                <a class="text-white fs-3 mx-2" href="#"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-white fs-3 mx-4" href="#"><i class="bi bi-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-white fs-3 mx-1" href="#"><i class="bi bi-instagram"></i></a>
+                            </li>
+                        </ul>
+
+                        <div class="col-6">
+                            <p className={styles.freepik}>Créditos FREEPIK</p>
                         </div>
                     </div>
                 </div>
