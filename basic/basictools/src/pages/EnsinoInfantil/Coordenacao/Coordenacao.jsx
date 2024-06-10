@@ -7,6 +7,7 @@ const Coordenacao = () => {
     <>
         <FaixaTitulo colorClass="faixa-coordenacao" titulo="EDUCAÇÃO INFANTIL" subtitulo="Coordenação Motora"/>
 
+        <div class="container">
         <div class="row py-5">
           <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="card h-100, w-100 ">
@@ -91,6 +92,7 @@ const Coordenacao = () => {
             </div>
           </div>
         </div>
+      </div>
     </>
   )
 }

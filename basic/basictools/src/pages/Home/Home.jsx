@@ -10,7 +10,7 @@ const Home = () => {
 
       <section className={styles.bgHome}>
         <div class="container">
-          <div class="row align-items-center py-4 mt-5">
+          <div class="row align-items-center py-4">
             <div class="col-md-12 text-center">
             <h1 class="fw-bolder text-white opacity-75 mt-5">Bem Vindos ao</h1>
               <h1 class="fw-bolder text-white opacity-75 pt-3">APRENDER BRINCANDO</h1>

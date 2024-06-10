@@ -1,6 +1,7 @@
 import React from 'react'
 import FaixaTitulo from '../../components/FaixaTitulo/FaixaTitulo'
 import styles from './Contato.module.css'
+import './Contato.module.css'
 
 const Contato = () => {
     return (
@@ -19,30 +20,23 @@ const Contato = () => {
                 </div>
             </div>*/}
 
-
             <div className={styles.contato}>
-                <div class="card w-50 mx-auto">
+                <div className="card w-50 mx-auto custom-card">
                     <form className={styles.form}>
-                        <div class="row">
-                            <div class=" col-md-6 mt-5">
+                        <div className="row mt-5">
+                            <div class="col-sm-12 col-md-12 col-lg-6 mt-2">
                                 <input type="text" class="form-control" placeholder="Nome completo" aria-label="First name" />
                             </div>
-                            <div class="col-md-6 mt-5">
-                                <input type="text" class="form-control" placeholder="Email" aria-label="Last name" />
+                            <div class="col-sm-12 col-md-12 col-lg-6 mt-2">
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email" />
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 mt-2">
-                                <input type="text" class="form-control" placeholder="Assunto" aria-label="Last name" />
+                            <div class="col-sm-12 col-md-12 col-lg-12 mt-2">
+                                <input type="text" class="form-control" placeholder="Assunto" aria-label="Assunto" />
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 mt-2">
+                            <div class="col-sm-12 col-md-12 col-lg-12 mt-2">
                                 <textarea type='text' class="form-control" placeholder="Digite sua mensagem aqui" rows="4"></textarea>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 text-center mt-4 mb-5">
+                            <div class="col-sm-12 col-md-12 col-lg-12 text-center mt-4 mb-5">
                                 <button class="btn btn-outline-primary">Enviar Mensagem</button>
                             </div>
                         </div>
