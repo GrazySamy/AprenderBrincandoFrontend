@@ -67,7 +67,7 @@ const Login = () => {
 
            
               <div class="text-center mt-4 mb-5">
-                <button class="btn btn-outline-primary">Enviar Mensagem</button>
+                <button class="btn btn-outline-primary">Entrar</button>
               </div>
           
           </form>

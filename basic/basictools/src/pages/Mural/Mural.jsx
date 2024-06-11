@@ -11,21 +11,24 @@ function Mural() {
 
     return (
         <>
-            {/*<FaixaTitulo colorClass="faixa-mural" titulo="ATIVIDADES REALIZADAS" subtitulo="Mural" />
-                /<div class="col-6">
-            <div className={styles.container}>
-            <SlideshowLightbox showThumbnails={true}>
-                <img className={styles.img} src="src/assets/img/contorno.webp" alt="Imagem 1"/>
-                <img className={styles.img} src="src/assets/img/palitos.JPG" alt="Imagem 1"/>
-                <img className={styles.img} src="src/assets/img/barquinho.JPG" alt="Imagem 1"/>
-                <img className={styles.img} src="src/assets/img/papelao.JPG" alt="Imagem 1"/>
-                <img className={styles.img} src="src/assets/img/bacia.JPG" alt="Imagem 1"/>
-                <img className={styles.img} src="src/assets/img/vulcaoo.JPG" alt="Imagem 1"/>
-                
-            </SlideshowLightbox>
+            <FaixaTitulo colorClass="faixa-mural" titulo="ATIVIDADES REALIZADAS" subtitulo="Mural" />
+
+            
+            <div className='container mx-auto text-center'>
+            <div className={styles.mural}>
+                <SlideshowLightbox showThumbnails={true}>
+                    <img className={styles.imgMural} src="src/assets/img/contorno.JPG" alt="Imagem 1"/>
+                    <img className={styles.imgMural} src="src/assets/img/palitos.JPG" alt="Imagem 1"/>
+                    <img className={styles.imgMural} src="src/assets/img/barquinho.JPG" alt="Imagem 1"/>
+                    <img className={styles.imgMural} src="src/assets/img/papelao.JPG" alt="Imagem 1"/>
+                    <img className={styles.imgMural} src="src/assets/img/bacia.JPG" alt="Imagem 1"/>
+                    <img className={styles.imgMural} src="src/assets/img/vulcaoo.JPG" alt="Imagem 1"/>
+                    <img className={styles.imgMural} src="src/assets/img/bola.JPG" alt="Imagem 1"/>
+                    <img className={styles.imgMural} src="src/assets/img/jogos.JPG" alt="Imagem 1"/>
+                </SlideshowLightbox>
             </div>
-            </div>*/}
-</>
+            </div>
+        </>
  
     )
 }

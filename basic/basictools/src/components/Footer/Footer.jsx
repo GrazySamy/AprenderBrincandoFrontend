@@ -8,17 +8,17 @@ const Footer = () => {
     return (
         <>
             <footer className={styles.footer}>
-                <div class="container">
-                    <div class="row text-white fs-6 pt-4">
+                <div className="container">
+                    <div className="row text-white fs-6 pt-4">
                         <p className={styles.paragrafo}>Aprender não é uma tarefa, é uma AVENTURA!</p>
                     </div>
 
-                    <div class="row fw-bolder pb-4">
+                    <div className="row fw-bolder pb-4">
                         <span>REDES SOCIAIS</span>
                     </div>
 
-                    <div class="row">
-                        <ul class="nav col-6 mb-4">
+                    <div className="row">
+                        <ul className="nav col-6 mb-4">
                             <li class="nav-item">
                                 <a class="text-white fs-3 mx-2" href="#"><i class="bi bi-facebook"></i></a>
                             </li>
