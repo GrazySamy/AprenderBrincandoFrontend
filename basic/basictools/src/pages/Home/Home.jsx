@@ -119,7 +119,7 @@ const Home = () => {
         <div class="container">
           <div class="row align-items-center py-5">
             <div class="col-md-6">
-              <img src="assets/img/sobre2.png" class="img-fluid" alt="..." />
+            <img src="src/assets/img/logo.png" class="card-img-top" alt="..." className={styles.sobre} />
             </div>
             <div class="col-md-6 p-3">
               <h1 class="fw-bolder mb-4">Sobre Nós</h1>
