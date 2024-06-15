@@ -10,7 +10,7 @@ const Ciencias = () => {
     <div class="row py-5">
           <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="card h-100, w-100 ">
-              <iframe width="100%" height="185" src="https://www.youtube.com/embed/QaeeOFT31eU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             <iframe width="100%" height="185" src="https://www.youtube.com/embed/QaeeOFT31eU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               <div class="card-body">
                 <p class="card-text">
                 CIÊNCIAS:Experimento fácil de Ciências: Chuva Artificial / Ciclo da Água
