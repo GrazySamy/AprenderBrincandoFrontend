@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const register = () => {
-    //#region controller service
+    
     const [displayName, setDisplayName]=useState('')
     const [email, setEmail]=userState('')
     const [password, setPassword]=userState('')
@@ -21,12 +21,11 @@ const register = () => {
     }
     console.log(user)
 }
-    //#endregion
-    //#region View Browser Page
+   
   return (
     <div>
         <h1>
-            Compartilhe suas experiencias com outros nomades
+            Compartilhe seus aprendizados 
         </h1>
         <form onSubmit={handlerSubmit}>
             <label>
@@ -36,7 +35,7 @@ const register = () => {
                 required 
                 value={displayName} 
                 onChange={(e)=> setDisplayName(e.target.value)} 
-                placeholder="Entre com o seu nomade nome"></input>
+                placeholder="Entre com o seu nome"></input>
             </label>
             <label>
                 <span>Email:</span>
