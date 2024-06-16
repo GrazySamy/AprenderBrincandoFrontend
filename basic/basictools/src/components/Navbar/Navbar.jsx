@@ -101,6 +101,9 @@ function Navbar() {
                 <li class="nav-item">
                   <a class="nav-link" href="/mural">Mural</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/dashboard">Dashboard</a>
+                </li>
               </ul>
             </div>
           </div>
