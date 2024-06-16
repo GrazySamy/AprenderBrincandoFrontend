@@ -1,7 +1,29 @@
-.bgHome {
-  background-color: #5b93c8;
+
+.banner {
+  text-align: center;
+  color: white;
+  background-color: #6DA9D3;
+  border-radius:  20px 20px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
 }
-/* Cards Categoria - Botoes dos cards */
+.banner img {
+  width: 70%;
+ 
+}
+.banner h1 {
+  font-size: 2em;
+  margin: 10px 0 10px;
+}
+.banner p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+
+/*categorias cards*/
+
 .btAlfabetizacao {
   background-color: #184ec2;
   color: #ffffff;
@@ -79,12 +101,63 @@
   background-color: #157e4f;
   opacity: 80%;
 }
+.containner {
+  text-align: center;
+  padding: 40px;
+}
+.containner h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+.containner h1 {
+ margin-bottom: 40px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  max-width: 200px;
+  flex-grow: 1;
+  flex-basis: calc(20% - 20px);
+}
+.card img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.card h3 {
+  margin: 10px 0;
+  font-size: 1em;
+}
 
 /*mural na home*/
 .mural {
+  text-align: center;
+  color: rgb(14, 13, 13);
   background-color: #D6E2F0;
-  padding-bottom: 30px;
+  padding: 20px;
+  border-radius:  10px 10px 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
 }
+.fraseMural{
+ text-align: center;
+margin-bottom: 50px;
+width: 80%;
+
+}
+
 
 .tamanhoImg {
   margin: auto;
@@ -105,14 +178,16 @@
 
 .btMural {
   background-color: #5b93c8;
-  margin-top: 19px;
+ margin-bottom: 30px;
+ margin-top: 40px;
   border-radius: 100px;
-  width: 12%;
+  width: 10%;
   padding: 10px;
   border: none;
   cursor: pointer;
   color: #ffffff;
 }
+
 
 .btMural:hover {
   background-color: #709BC3;
@@ -131,5 +206,36 @@
 /*sobre nós na home*/
 .fraseSobre{
   text-align: justify;
+}
 
+
+
+
+@media (max-width: 768px) {
+  .card {
+      flex-basis: calc(40% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .card {
+      flex-basis: calc(80% - 20px);
+  }
+}
+
+
+
+
+
+
+
+
+
+.containerM {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between the images and the text */
+  background-color: rgb(206, 213, 250);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
