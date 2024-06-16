@@ -1,3 +1,4 @@
+import './scss/style.scss'
 import './App.css'
 import { BrowserRouter, Routes, Route, Navigate, Form } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
@@ -18,6 +19,7 @@ import Sobre from './pages/Sobre/Sobre'
 import Contato from './pages/Contato/Contato'
 import Login from './pages/Login/Login'
 import Mural from './pages/Mural/Mural'
+import Dashboard from './pages/Dashboard/Dashboard'
 import loading from './assets/img/Loading.gif'
 
 
@@ -54,6 +56,7 @@ function App() {
         <Route path='/contato' element={<Contato />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/mural' element={<Mural />}></Route>
+        <Route path='/dashboard' element={<Dashboard />}></Route>
       </Routes>
     <Footer />
   </BrowserRouter>
