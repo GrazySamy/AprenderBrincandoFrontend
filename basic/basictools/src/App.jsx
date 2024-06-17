@@ -19,6 +19,7 @@ import Login from './pages/Login/Login'
 import Mural from './pages/Mural/Mural'
 import Dashboard from './pages/Dashboard/Dashboard'
 import loading from './assets/img/Loading.gif'
+import Register from './pages/Register/register'
 
 function App() {
   const [user, setUser] = useState(undefined)
@@ -52,6 +53,7 @@ function App() {
             <Route path='/login' element={<Login />}></Route>
             <Route path='/mural' element={<Mural />}></Route>
             <Route path='/dashboard' element={<Dashboard />}></Route>
+            <Route path='/register' element={<Register />}></Route>
           </Routes>
           <Footer />
         </BrowserRouter>

@@ -10,7 +10,7 @@ const Home = () => {
     <div className={styles.banner}>
       <div class="row align-items-center py-4">
           <div class="col-md-4 text-center">
-          <img src="src/assets/img/famFog.png" alt="Astronauts on a rocket" />
+          <img src="src/assets/img/famFog.png" alt="Desenho de astronauta e bebê astronauta montados em um foguete no espaço."/>
           </div>
           <div class="col-md-7">
           <h1 class="mt-5">BEM-VINDO AO APRENDER BRINCANDO!</h1>
@@ -26,28 +26,28 @@ const Home = () => {
         <h1 >Navegue em Nossas Categorias</h1>
         <div className={styles.cards}>
             <div className={styles.card}>
-                <img src="src/assets/img/alfabetização.png" alt="Alfabetização"/>
+                <img src="src/assets/img/alfabetização.png" alt="Desenho de astronauta montado em um lápis."/>
                 <h3>ALFABETIZAÇÃO</h3>
                 <button className={styles.btAlfabetizacao}>Explorar</button>
             </div>
             <div className={styles.card}>
-                <img src="src/assets/img/coordenação.png" alt="Coordenação Motora"/>
+                <img src="src/assets/img/coordenação.png" alt="Desenho de astronauta jogando futebol com uma bola em formato de lua."/>
                 <h3>COORDENAÇÃO MOTORA</h3>
                 {/*<button styles="background-color: #ff5722;">Explorar</button>*/}
                 <button className={styles.btCoordenacao}>Explorar</button>
             </div>
             <div className={styles.card}>
-                <img src="src/assets/img/portugues.png" alt="Português"/>
+                <img src="src/assets/img/portugues.png" alt="Desenho de astronauta lendo livro sobre a lua."/>
                 <h3>PORTUGUÊS</h3>
                 <button className={styles.btPortugues}>Explorar</button>
             </div>
             <div className={styles.card}>
-                <img src="src/assets/img/matematica.png" alt="Matemática"/>
+                <img src="src/assets/img/matematica.png" alt="Desenho de astronauta em dúvida."/>
                 <h3>MATEMÁTICA</h3>
                 <button className={styles.btMatematica}>Explorar</button>
             </div>
             <div className={styles.card}>
-                <img src="src/assets/img/cienciass.png" alt="Ciências"/>
+                <img src="src/assets/img/cienciass.png" alt="Desenho de astronauta vestindo um jaleco e segurando um erlenmeyer."/>
                 <h3>CIÊNCIAS</h3>
                 <button className={styles.btCiencias}>Explorar</button>
             </div>
@@ -65,16 +65,16 @@ const Home = () => {
                <div class="mb-5 mt-4 w-75 mx-auto">Somos dedicados a estimular a educação infantil com atividades divertidas e educativas que você pode fazer com seus filhos. Nossa missão é fortalecer os laços familiares e promover o desenvolvimento das crianças através de vídeos envolventes e lúdicos. Junte-se a nós e transforme o aprendizado em uma aventura emocionante para toda a família!</div>
               <div class="row justify-content-center">
                 <div class="col-md-3 card" className={styles.tamanhoCard}>
-                  <img src="src/assets/img/vulcao.webp" class="card-img-top" alt="..." className={styles.tamanhoImg} />
+                  <img src="src/assets/img/vulcao.webp" class="card-img-top" alt="Imagem de uma criança fazendo um experimento de vulcão." className={styles.tamanhoImg} />
                 </div>
                 <div class="col-md-3 card" className={styles.tamanhoCard}>
-                  <img src="src/assets/img/letras.webp" class="card-img-top" alt="..." className={styles.tamanhoImg} />
+                  <img src="src/assets/img/letras.webp" class="card-img-top" alt="Imagem de criança brincando" className={styles.tamanhoImg} />
                 </div>
                 <div class="col-md-3 card" className={styles.tamanhoCard}>
-                  <img src="src/assets/img/detergente.jpg" class="card-img-top" alt="..." className={styles.tamanhoImg} />
+                  <img src="src/assets/img/detergente.jpg" class="card-img-top" alt="Imagem com uma criança e seu responsável realizando um experimento com detergentes coloridos." className={styles.tamanhoImg} />
                 </div>
                 <div class="col-md-3 card" className={styles.tamanhoCard}>
-                  <img src="src/assets/img/recorte.webp" class="card-img-top" alt="..." className={styles.tamanhoImg} />
+                  <img src="src/assets/img/recorte.webp" class="card-img-top" alt="Imagem de duas crianças sentadas de costas recortando papéis coloridos." className={styles.tamanhoImg} />
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Home = () => {
         <div class="container">
           <div class="row align-items-center py-5">
             <div class="col-md-6">
-            <img src="src/assets/img/logo.png" class="card-img-top" alt="..." className={styles.sobre} />
+            <img src="src/assets/img/logo.png" class="card-img-top" alt="Logo do Aprender Brincando composta por um foguete saindo de um livro soltando fumaça." className={styles.sobre} />
             </div>
             <div class="col-md-6 p-3">
               <h1 class="fw-bolder mb-4">Sobre Nós</h1>
