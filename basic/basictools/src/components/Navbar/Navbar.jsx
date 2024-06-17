@@ -47,7 +47,7 @@ function Navbar() {
     <>
       <nav class="basic-menu z-1">
         { user && (<span class="basic-menu-item blue"> <UserProfile user={avatar}  onLogout={sair} /> </span>) }
-        { !user && (<a href="login" class="basic-menu-item blue"> <i class="fa fa-sign-in"></i> </a>) }
+        { !user && (<a href="login" class="basic-menu-item blue"> <i class="fa fa-sign-in" ></i> </a>) }
      </nav> 
 
 
@@ -55,7 +55,7 @@ function Navbar() {
 
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/"><img className={styles.logo} src="src/assets/img/logo.png" alt="..." width="15%" /></a>
+          <a class="navbar-brand" href="/"><img className={styles.logo} src="src/assets/img/logo.png" alt="Logo do Aprender Brincando composta por um foguete saindo de um livro soltando fumaça." width="15%" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
