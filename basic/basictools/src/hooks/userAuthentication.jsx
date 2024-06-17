@@ -92,15 +92,15 @@ export const userAuthentication = () => {
             let systemErrorMessage;
 
             if (error.code === 'auth/invalid-login-credentials') {
-                systemErrorMessage = 'Este usuário não está cadastrado';
-            } else if (error.code === 'auth/wrong-password') {
-                systemErrorMessage = 'Há erro com suas credenciais.';
+                systemErrorMessage = 'Usuário não cadastrado';
+            } else if (error.code === 'auth/wrong-password' || error.code === 'auth/invalid-credential') {
+                systemErrorMessage = 'Credenciais inválidas';
             } else {
                 systemErrorMessage = 'Ocorreu um erro, tente novamente mais tarde';
             }
 
             setLoading(false);
-            setError(systemErrorMessage);
+            throw(systemErrorMessage);
         }
     };
 
