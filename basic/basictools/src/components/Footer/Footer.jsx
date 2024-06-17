@@ -31,7 +31,8 @@ const Footer = () => {
                         </ul>
 
                         <div class="col-6">
-                            <p className={styles.freepik}>Créditos FREEPIK</p>
+                            <p className={styles.freepik}>Créditos de imagens ao Freepik</p>
+                            <p className={styles.freepik}>&copy; 2024 Aprender Brincando. Todos os direitos reservados.</p>
                         </div>
                     </div>
                 </div>
