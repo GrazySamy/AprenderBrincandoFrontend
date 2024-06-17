@@ -1,10 +1,12 @@
 import React from 'react'
 import FaixaTitulo from '../../../components/FaixaTitulo/FaixaTitulo'
+import ModalVideo from '../../../components/ModalVideo/ModalVideo'
 
 const Alfabetizacao = () => {
   return (
     <>
       <FaixaTitulo colorClass="faixa-alfabetizacao" titulo="EDUCAÇÃO INFANTIL" subtitulo="Alfabetização" />
+      <ModalVideo />
 
       <div class="container">
       <div class="row py-5">
