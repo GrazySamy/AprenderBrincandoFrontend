@@ -104,6 +104,9 @@ function Navbar() {
                 <li class="nav-item">
                   <a class="nav-link" href="/dashboard">Dashboard</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/ajuda">Ajuda</a>
+                </li>
               </ul>
             </div>
           </div>
