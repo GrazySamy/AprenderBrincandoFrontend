@@ -37,7 +37,7 @@ const Contato = () => {
                                 <textarea type='text' class="form-control" placeholder="Digite sua mensagem aqui" rows="4"></textarea>
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg-12 text-center mt-4 mb-5">
-                                <button class="btn btn-outline-primary">Enviar Mensagem</button>
+                            <button className={styles.btenviar}>Enviar Mensagem</button>
                             </div>
                         </div>
                     </form>

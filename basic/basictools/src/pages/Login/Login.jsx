@@ -116,9 +116,7 @@ const Login = () => {
                       </CInputGroup>
                       <CRow>
                         <CCol xs={6}>
-                          <CButton type="submit" color="primary" className="px-4">
-                            Fazer login
-                          </CButton>
+                        <button className={styles.btlogin}>  Fazer login </button>
                         </CCol>
                         <CCol xs={6} className="text-right">
                           <CButton color="link" className="px-0 fst-italic text-decoration-none" >
@@ -152,9 +150,9 @@ const Login = () => {
                       <img class="w-50" src="src/assets/img/famFog.png" alt="Astronauts on a rocket" />              
                       </p>
                       <Link to="/register">
-                        <CButton className="mt-3" style={{ backgroundColor: '#ddffc1', color: '#111f0d' }}>
+                      <button className={styles.btcriar}>
                           Criar uma conta
-                        </CButton>
+                        </button>
                       </Link>
                     </div>
                   </CCardBody>
