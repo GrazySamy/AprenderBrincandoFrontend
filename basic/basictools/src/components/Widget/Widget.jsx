@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
+import styles from './Widget.module.css'
 
 import {
   CRow,
@@ -14,6 +15,7 @@ import { getStyle } from '@coreui/utils'
 import { CChartBar, CChartLine } from '@coreui/react-chartjs'
 import CIcon from '@coreui/icons-react'
 import { cilArrowBottom, cilArrowTop, cilOptions } from '@coreui/icons'
+import Relatorio, { openRelatorioVideos, openRelatorioUploads, openRelatorioContatos, openRelatorioSessoes } from '../Relatorio/Relatorio'
 
 const Widgets = (props) => {
   const widgetChartRef1 = useRef(null)
@@ -38,6 +40,9 @@ const Widgets = (props) => {
   }, [widgetChartRef1, widgetChartRef2])
 
   return (
+    <>
+    <Relatorio />
+
     <CRow className={props.className} xs={{ gutter: 4 }}>
       <CCol sm={6} xl={4} xxl={3}>
         <CWidgetStatsA
@@ -57,7 +62,7 @@ const Widgets = (props) => {
                 <CIcon icon={cilOptions} />
               </CDropdownToggle>
               <CDropdownMenu>
-                <CDropdownItem>Exportar</CDropdownItem>
+                <CDropdownItem onClick={openRelatorioVideos} className={styles.relatorio}>Relatório</CDropdownItem>
               </CDropdownMenu>
             </CDropdown>
           }
@@ -144,7 +149,7 @@ const Widgets = (props) => {
                 <CIcon icon={cilOptions} />
               </CDropdownToggle>
               <CDropdownMenu>
-                <CDropdownItem>Exportar</CDropdownItem>
+                <CDropdownItem onClick={openRelatorioUploads} className={styles.relatorio}>Relatório</CDropdownItem>
               </CDropdownMenu>
             </CDropdown>
           }
@@ -230,7 +235,7 @@ const Widgets = (props) => {
                 <CIcon icon={cilOptions} />
               </CDropdownToggle>
               <CDropdownMenu>
-                <CDropdownItem>Exportar</CDropdownItem>
+                <CDropdownItem onClick={openRelatorioContatos} className={styles.relatorio}>Relatório</CDropdownItem>
               </CDropdownMenu>
             </CDropdown>
           }
@@ -299,7 +304,7 @@ const Widgets = (props) => {
                 <CIcon icon={cilOptions} />
               </CDropdownToggle>
               <CDropdownMenu>
-                <CDropdownItem>Exportar</CDropdownItem>
+                <CDropdownItem onClick={openRelatorioSessoes} className={styles.relatorio}>Relatório</CDropdownItem>
               </CDropdownMenu>
             </CDropdown>
           }
@@ -363,6 +368,7 @@ const Widgets = (props) => {
         />
       </CCol>
     </CRow>
+    </>
   )
 }
 
