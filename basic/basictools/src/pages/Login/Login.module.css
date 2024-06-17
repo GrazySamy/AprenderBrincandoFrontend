@@ -19,6 +19,7 @@
     margin-bottom: 20px;
   }
   
+  
   .formLogin button {
     width: 100%;
     padding: 10px;
@@ -74,4 +75,37 @@
 
   .google:hover {
     background-color: #ebebeb;
+  }
+
+  .btlogin{
+    background-color: #5b93c8;
+   margin-bottom: 30px;
+    border-radius: 100px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .btlogin:hover{
+    background-color: #709BC3;
+    opacity: 80%;
+    color: #ffffff;
+  }
+
+  
+  .btcriar{
+    background-color: #5b93c8;
+   margin-bottom: 30px;
+    border-radius: 100px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .btcriar:hover{
+    background-color: #709BC3;
+    opacity: 80%;
+    color: #ffffff;
   }

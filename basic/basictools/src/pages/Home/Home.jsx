@@ -28,28 +28,28 @@ const Home = () => {
             <div className={styles.card}>
                 <img src="src/assets/img/alfabetização.png" alt="Desenho de astronauta montado em um lápis."/>
                 <h3>ALFABETIZAÇÃO</h3>
-                <button className={styles.btAlfabetizacao}>Explorar</button>
+                <a href="/Alfabetizacao"><button className={styles.btAlfabetizacao}>Explorar</button></a>
             </div>
             <div className={styles.card}>
                 <img src="src/assets/img/coordenação.png" alt="Desenho de astronauta jogando futebol com uma bola em formato de lua."/>
                 <h3>COORDENAÇÃO MOTORA</h3>
                 {/*<button styles="background-color: #ff5722;">Explorar</button>*/}
-                <button className={styles.btCoordenacao}>Explorar</button>
+                <a href="/Coordenacao"><button className={styles.btCoordenacao}>Explorar</button></a>
             </div>
             <div className={styles.card}>
                 <img src="src/assets/img/portugues.png" alt="Desenho de astronauta lendo livro sobre a lua."/>
                 <h3>PORTUGUÊS</h3>
-                <button className={styles.btPortugues}>Explorar</button>
+                <a href="/Portugues"><button className={styles.btPortugues}>Explorar</button></a>
             </div>
             <div className={styles.card}>
                 <img src="src/assets/img/matematica.png" alt="Desenho de astronauta em dúvida."/>
                 <h3>MATEMÁTICA</h3>
-                <button className={styles.btMatematica}>Explorar</button>
+                <a href="/Matematica"><button className={styles.btMatematica}>Explorar</button></a>
             </div>
             <div className={styles.card}>
                 <img src="src/assets/img/cienciass.png" alt="Desenho de astronauta vestindo um jaleco e segurando um erlenmeyer."/>
                 <h3>CIÊNCIAS</h3>
-                <button className={styles.btCiencias}>Explorar</button>
+                <a href="/Ciencias"><button className={styles.btCiencias}>Explorar</button></a>
             </div>
         </div>
     </div>

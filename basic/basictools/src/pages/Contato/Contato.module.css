@@ -14,3 +14,22 @@
   background-color: red;
   color: red;
 }
+
+.btenviar {
+  background-color: #5b93c8;
+ margin-bottom: 30px;
+ margin-top: 40px;
+  border-radius: 100px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+
+
+.btenviar:hover {
+  background-color: #709BC3;
+  opacity: 80%;
+  color: #ffffff;
+}
