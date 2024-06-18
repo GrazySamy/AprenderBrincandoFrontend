@@ -73,7 +73,7 @@ const Home = () => {
           <div class="row">
             <div class="col-md-12 text-center mt-4 pt-2">
               <h1 class="fw-bolder mb-4" href="mural">Mural</h1>
-              <div class="mb-5 mt-4 w-75 mx-auto">Somos dedicados a estimular a educação infantil com atividades divertidas e educativas que você pode fazer com seus filhos. Nossa missão é fortalecer os laços familiares e promover o desenvolvimento das crianças através de vídeos envolventes e lúdicos. Junte-se a nós e transforme o aprendizado em uma aventura emocionante para toda a família!</div>
+              <div class="mb-5 mt-4 w-75 mx-auto">Nosso mural celebra as conquistas e momentos especiais das crianças, compartilhando fotos das atividades educativas e divertidas que elas realizam. Ele destaca o desenvolvimento e a alegria no aprendizado de cada pequeno explorador. Conheça nosso mural e venha fazer parte dessa jornada incrível junto com seus filhos.</div>
               <div class="row justify-content-center">
                 <div class="col-md-3 card" className={styles.tamanhoCard}>
                   <img src="src/assets/img/vulcao.webp" class="card-img-top" alt="Imagem de uma criança fazendo um experimento de vulcão." className={styles.tamanhoImg} />

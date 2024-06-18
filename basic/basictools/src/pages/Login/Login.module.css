@@ -4,7 +4,7 @@
     align-items: center;
     margin: 100px;
   }
-  
+
   .formLogin {
     background-color: #fff;
     border-radius: 8px;
@@ -12,14 +12,14 @@
     padding: 40px;
     max-width: 400px;
     width: 100%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
-  
+
   .groupLogin {
     margin-bottom: 20px;
   }
-  
-  
+
+
   .formLogin button {
     width: 100%;
     padding: 10px;
@@ -30,7 +30,7 @@
     cursor: pointer;
     margin-top: 20px;
   }
-  
+
   .formLogin button:hover {
     background-color: #C8A2C8;
   }
@@ -45,12 +45,13 @@
 
 
 
-/* Novo login*/
+  /* Novo login*/
 
   .login {
     background-color: #e1eaf4;
-  padding: 70px;
+    padding: 70px;
   }
+
   .form {
     width: 100%;
     justify-content: center;
@@ -59,10 +60,11 @@
 
 
 
-/* Login CoreUI */
-.loginSocial{
-  margin-top: 40px;
-}
+  /* Login CoreUI */
+  .loginSocial {
+    margin-top: 40px;
+  }
+
   .google {
     margin: auto;
     display: block;
@@ -70,42 +72,40 @@
     border: none;
     border-radius: 100%;
     background-color: #f0efef;
-    
+
   }
 
   .google:hover {
     background-color: #ebebeb;
   }
 
-  .btlogin{
+  .btlogin {
     background-color: #5b93c8;
-   margin-bottom: 30px;
+    margin-bottom: 30px;
     border-radius: 100px;
     padding: 10px;
     border: none;
     cursor: pointer;
     color: #ffffff;
-  }
-  
-  .btlogin:hover{
-    background-color: #709BC3;
-    opacity: 80%;
-    color: #ffffff;
+    width: 90%;
   }
 
-  
-  .btcriar{
+  .btlogin:hover {
+    opacity: 80%;
+  }
+
+
+  .btcriar {
     background-color: #5b93c8;
-   margin-bottom: 30px;
+    margin-bottom: 30px;
     border-radius: 100px;
     padding: 10px;
     border: none;
     cursor: pointer;
     color: #ffffff;
+    width: 40%;
   }
-  
-  .btcriar:hover{
-    background-color: #709BC3;
+
+  .btcriar:hover {
     opacity: 80%;
-    color: #ffffff;
   }

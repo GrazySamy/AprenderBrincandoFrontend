@@ -1,76 +1,20 @@
-/* Container for the form */
-.registerContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header */
-  .registerTitle {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  /* Form styles */
-  .registerForm {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  /* Label and input styles */
-  .registerLabel {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-  
-  .registerLabel span {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-  }
-  
-  .registerInput[type="text"],
-  .registerInput[type="email"],
-  .registerInput[type="password"] {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    font-size: 14px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .registerInput[type="text"]:focus,
-  .registerInput[type="email"]:focus,
-  .registerInput[type="password"]:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  /* Button styles */
-  .btn {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
+.btRegister {
+  background-color: #5b93c8;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 100px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  width: 30%;
+}
+
+.btRegister:hover{
+ background-color: #709BC3;
+ opacity: 80%;
+ color: #ffffff;
+}
   
   /* Error message styles */
   .error {

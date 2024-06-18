@@ -22,7 +22,7 @@ import { cilLockLocked, cilUser } from '@coreui/icons'
 const Contato = () => {
     return (
         <>
-            <FaixaTitulo colorClass="faixa-contato" titulo="Envie suas sugestões, elogios ou dúvidas técnicas" subtitulo="Suporte" />
+            <FaixaTitulo colorClass="faixa-contato" titulo="Envie suas sugestões, elogios ou dúvidas. Será um prazer conversar com você." subtitulo="Suporte" />
 
             <div className="bg-body-tertiary mt-5 mb-5 d-flex flex-row align-items-center">
                 <CContainer>

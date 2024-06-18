@@ -19,7 +19,7 @@ import Login from './pages/Login/Login'
 import Mural from './pages/Mural/Mural'
 import Dashboard from './pages/Dashboard/Dashboard'
 import loading from './assets/img/Loading.gif'
-import Register from './pages/Register/register'
+import Register from './pages/Register/Register'
 import Ajuda from './pages/Ajuda/Ajuda'
 
 function App() {

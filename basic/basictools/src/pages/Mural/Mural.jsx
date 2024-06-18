@@ -11,7 +11,7 @@ function Mural() {
 
     return (
         <>
-            <FaixaTitulo colorClass="faixa-mural" titulo="ATIVIDADES REALIZADAS" subtitulo="Mural" />
+            <FaixaTitulo colorClass="faixa-mural" titulo="Momentos de aprendizado e diversão. Veja as aventuras realizadas pelas crianças.!" subtitulo="Mural" />
 
             
             <div className='container mx-auto text-center'>
