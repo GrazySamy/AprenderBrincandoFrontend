@@ -52,3 +52,15 @@
     color: #f1f3f5;
     padding: 50px;
 }
+
+.faixa-dashboard {
+    background-color: #90598e;
+    color: #e7cce1;
+    padding: 50px;
+}
+
+.faixa-ajuda {
+    background-color: #75acff;
+    color: #cfe2ff;
+    padding: 50px;
+}
