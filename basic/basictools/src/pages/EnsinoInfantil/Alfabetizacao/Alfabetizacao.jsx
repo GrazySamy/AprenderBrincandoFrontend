@@ -1,18 +1,29 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import styles from './Alfabetizacao.module.css'
 import FaixaTitulo from '../../../components/FaixaTitulo/FaixaTitulo'
 import ModalVideo from '../../../components/ModalVideo/ModalVideo'
 
 const Alfabetizacao = () => {
+
+  const modalRef = useRef();
+
+  const showModalVideo = (titulo, video) => {
+      if (modalRef.current) {
+        modalRef.current.show(titulo, video);
+      }
+  };
+
   return (
     <>
       <FaixaTitulo colorClass="faixa-alfabetizacao" titulo="EDUCAÇÃO INFANTIL" subtitulo="Alfabetização" />
-      <ModalVideo />
+      <ModalVideo ref={modalRef} />
 
       <div class="container">
       <div class="row py-5">
           <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="card h-100, w-100 ">
-              <iframe width="100%" height="185" src="https://www.youtube.com/embed/7rTj1z8w1UA?si=HUITnOr-RK6-OxlV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              {/* Substituido o "iframe" pela "img" */}
+              <img className={styles.thumbnail} src="src/assets/img/thumbnails/alfabetizacao_ensinando_nome.jpg" onClick={() => showModalVideo("Plano Nacional de Educação", "https://www.youtube.com/embed/7rTj1z8w1UA?si=HUITnOr-RK6-OxlV")} alt="" />
               <div class="card-body">
                 <p class="card-text">
                 Como ensinar o nome próprio

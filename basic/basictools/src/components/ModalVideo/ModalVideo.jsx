@@ -1,32 +1,37 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import { useState, forwardRef, useImperativeHandle  } from 'react';
+import {
+  CModal,
+  CModalBody,
+  CModalHeader,
+  CModalTitle
+} from '@coreui/react'
 
-function ModalVideo() {
-  const values = [true];
-  const [fullscreen, setFullscreen] = useState(true);
-  const [show, setShow] = useState(false);
+const ModalVideo = forwardRef((props, ref) => {
 
-  function handleShow(breakpoint) {
-    setFullscreen(breakpoint);
-    setShow(true);
-  }
+  const [visible, setVisible] = useState(false)
+  const [titulo, setTitulo] = useState('')
+  const [video, setVideo] = useState('')
 
+  useImperativeHandle(ref, () => ({
+    show: (titulo, video) => {
+      setVideo(video);
+      setTitulo(titulo);
+      setVisible(true);
+    }
+  }));
+  
   return (
     <>
-      {values.map((v, idx) => (
-        <Button key={idx} className="me-2 mb-2" onClick={() => handleShow(v)}>
-          Full screen
-        </Button>
-      ))}
-      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal</Modal.Title>
-        </Modal.Header>
-        <Modal.Body><iframe width="99%" height="99%" src="https://www.youtube.com/embed/XxPVmpAJ5W4" title="PLANO NACIONAL DE EDUCAÇÃO | RUMOS DA EDUCAÇÃO #4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></Modal.Body>
-      </Modal>
+      <CModal fullscreen visible={visible} onClose={() => setVisible(false)}>
+        <CModalHeader>
+          <CModalTitle>{titulo}</CModalTitle>
+        </CModalHeader>
+        <CModalBody>
+          <iframe width="100%" height="99%" src={video} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </CModalBody>
+      </CModal>
     </>
   );
-}
+});
 
 export default ModalVideo;
