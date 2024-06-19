@@ -1,9 +1,16 @@
-.missao{
-    text-align: justify;
-  }
-  .visao{
-    text-align: justify;
-  }
-  .valor{
-    text-align: justify;
-  }
+.missao {
+  text-align: justify;
+}
+
+.visao {
+  text-align: justify;
+}
+
+.valor {
+  text-align: justify;
+}
+
+.foto {
+  height: 330px;
+  width: 100%;
+}

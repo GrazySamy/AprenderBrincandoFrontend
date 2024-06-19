@@ -19,7 +19,7 @@ import Login from './pages/Login/Login'
 import Mural from './pages/Mural/Mural'
 import Dashboard from './pages/Dashboard/Dashboard'
 import loading from './assets/img/Loading.gif'
-import Register from './pages/Register/register'
+import Registro from './pages/Registro/Registro'
 import Ajuda from './pages/Ajuda/Ajuda'
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
             <Route path='/login' element={<Login />}></Route>
             <Route path='/mural' element={<Mural />}></Route>
             <Route path='/dashboard' element={<Dashboard />}></Route>
-            <Route path='/register' element={<Register />}></Route>
+            <Route path='/register' element={<Registro />}></Route>
             <Route path='/ajuda' element={<Ajuda />}></Route>
           </Routes>
           <Footer />

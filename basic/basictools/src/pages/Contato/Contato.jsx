@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import FaixaTitulo from '../../components/FaixaTitulo/FaixaTitulo'
 import styles from './Contato.module.css'
 import './Contato.module.css'
@@ -20,9 +20,20 @@ import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 
 const Contato = () => {
+
+    const [validated, setValidated] = useState(false)
+    const handleSubmit = (event) => {
+      const form = event.currentTarget
+      if (form.checkValidity() === false) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      setValidated(true)
+    }
+
     return (
         <>
-            <FaixaTitulo colorClass="faixa-contato" titulo="Envie suas sugestões, elogios ou dúvidas técnicas" subtitulo="Suporte" />
+            <FaixaTitulo colorClass="faixa-contato" titulo="Envie suas sugestões, elogios ou dúvidas. Será um prazer conversar com você." subtitulo="Suporte" />
 
             <div className="bg-body-tertiary mt-5 mb-5 d-flex flex-row align-items-center">
                 <CContainer>
@@ -30,20 +41,20 @@ const Contato = () => {
                         <CCol md={9} lg={7} xl={6}>
                             <CCard className="mx-4">
                                 <CCardBody className="p-4">
-                                    <CForm>
+                                    <CForm className="needs-validation" validated={validated} onSubmit={handleSubmit}>
                                         <h1>Contato</h1>
                                         <p className="text-body-secondary">Envie sua mensagem</p>
                                         <CInputGroup className="mb-3">
                                             <CInputGroupText><i class="fa fa-user"></i></CInputGroupText>
-                                            <CFormInput placeholder="Nome" autoComplete="name" />
+                                            <CFormInput placeholder="Nome" autoComplete="name" maxLength={30} required />
                                         </CInputGroup>
                                         <CInputGroup className="mb-3">
                                             <CInputGroupText><i class="fa fa-at"></i></CInputGroupText>
-                                            <CFormInput placeholder="Email" autoComplete="email" />
+                                            <CFormInput type="email" placeholder="Email" autoComplete="email" maxLength={30} required />
                                         </CInputGroup>
                                         <CInputGroup className="mb-3">
                                             <CInputGroupText><i class="fa fa-comment"></i></CInputGroupText>
-                                            <CFormSelect aria-label="Default select example">
+                                            <CFormSelect required >
                                                 <option>Assunto</option>
                                                 <option value="1">Suporte Técnico</option>
                                                 <option value="2">Sugestão</option>
@@ -53,7 +64,7 @@ const Contato = () => {
                                         </CInputGroup>
                                         <CInputGroup className="mb-3">
                                             <CInputGroupText><i class="fa fa-envelope"></i></CInputGroupText>
-                                            <CFormTextarea placeholder="Mensagem" rows={5}></CFormTextarea>
+                                            <CFormTextarea placeholder="Mensagem" rows={5}  maxLength={100} required ></CFormTextarea>
                                         </CInputGroup>
                                         <div className='d-flex justify-content-center'>
                                             <button className={styles.btContato}>Enviar Mensagem</button>
