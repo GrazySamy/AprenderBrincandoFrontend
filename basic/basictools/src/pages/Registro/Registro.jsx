@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom'
-import styles from './Register.module.css';  // Import as module for CSS modules
+import { useNavigate } from 'react-router-dom'
+import styles from './Registro.module.css';  // Import as module for CSS modules
 import { userAuthentication } from '../../hooks/userAuthentication';
 import FaixaTitulo from '../../components/FaixaTitulo/FaixaTitulo'
 import {
-  CButton,
   CCard,
   CCardBody,
   CCol,
@@ -12,15 +11,10 @@ import {
   CForm,
   CFormInput,
   CInputGroup,
-  CFormSelect,
-  CFormTextarea,
   CFormFeedback,
   CInputGroupText,
   CRow,
 } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-import { cilLockLocked, cilUser } from '@coreui/icons'
-
 
 const Register = () => {
   const { createUser, error: authError, loading } = userAuthentication();
