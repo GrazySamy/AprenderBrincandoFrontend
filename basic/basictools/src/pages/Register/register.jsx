@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom'
 import styles from './Register.module.css';  // Import as module for CSS modules
 import { userAuthentication } from '../../hooks/userAuthentication';
 import FaixaTitulo from '../../components/FaixaTitulo/FaixaTitulo'
@@ -13,6 +14,7 @@ import {
   CInputGroup,
   CFormSelect,
   CFormTextarea,
+  CFormFeedback,
   CInputGroupText,
   CRow,
 } from '@coreui/react'
@@ -31,6 +33,9 @@ const Register = () => {
 
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
+  const [passwordsMatch, setPasswordsMatch] = useState(true);
+
+  const navigate = useNavigate()
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
@@ -41,20 +46,21 @@ const Register = () => {
   };
 
   const handleSubmit = async (e) => {
+
+    e.preventDefault();
+    setError('');
+
+    if (password !== confirmedPassword) {
+      setPasswordsMatch(false);
+      return;
+    }
+
     const form = e.currentTarget
     if (form.checkValidity() === false) {
       e.preventDefault()
       e.stopPropagation()
     }
     setValidated(true)
-
-    e.preventDefault();
-    setError('');
-
-    if (password !== confirmedPassword) {
-      setError('As senhas precisam ser iguais');
-      return;
-    }
 
     const user = {
       displayName,
@@ -64,9 +70,9 @@ const Register = () => {
 
     try {
       await createUser(user);
-      console.log('User registered successfully');
-    } catch (err) {
-      setError(authError || 'Ocorreu um erro, tente novamente mais tarde');
+      navigate('/');
+    } catch (error) {
+      setError(error);
     }
   };
 
@@ -74,49 +80,43 @@ const Register = () => {
     <>
       <FaixaTitulo colorClass="faixa-register" titulo="Crie sua conta para acessar conteúdos exclusivos" subtitulo="Criar conta" />
 
-
-
-
-
       <div className="bg-body-tertiary mt-5 mb-5 d-flex flex-row align-items-center">
         <CContainer>
           <CRow className="justify-content-center">
             <CCol md={9} lg={7} xl={6}>
               <CCard className="mx-4">
                 <CCardBody className="p-4">
+                  {error && (<p className={styles.error}>{error}</p>)}
                   <CForm className="needs-validation" validated={validated} onSubmit={handleSubmit}>
                     <h2>Criar conta</h2>
                     <p className="text-body-secondary">Entre seus dados</p>
                     <CInputGroup className="mb-3">
                       <CInputGroupText><i class="fa fa-user"></i></CInputGroupText>
-                      <CFormInput placeholder="Nome" autoComplete="name" maxLength={30} required />
+                      <CFormInput placeholder="Nome"  value={displayName} onChange={(e) => setDisplayName(e.target.value)} autoComplete="name" maxLength={30} required />
                     </CInputGroup>
                     <CInputGroup className="mb-3">
                       <CInputGroupText><i class="fa fa-at"></i></CInputGroupText>
-                      <CFormInput type="email" placeholder="Email" autoComplete="email" maxLength={30} required />
+                      <CFormInput type="email"  value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" autoComplete="email" maxLength={30} required />
                     </CInputGroup>
-
                     <CInputGroup className="mb-3">
                       <CInputGroupText><i class="fa fa-lock"></i></CInputGroupText>
-                      <CFormInput type={ passwordVisible ? 'text' : 'password'} value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha" autoComplete="password" minLength={8} maxLength={20} required />
+                      <CFormInput type={ passwordVisible ? 'text' : 'password'} value={password} onChange={(e) => {setPassword(e.target.value); setPasswordsMatch(true);}} placeholder="Senha" autoComplete="password" minLength={6} maxLength={20} required />
                       <CInputGroupText onClick={togglePasswordVisibility} style={{ cursor: 'pointer' }}>
                         {!passwordVisible && (<i class="fa fa-eye-slash"></i>)}
                         {passwordVisible && (<i class="fa fa-eye"></i>)}
                       </CInputGroupText>
                     </CInputGroup>
-
                     <CInputGroup className="mb-3">
                       <CInputGroupText><i class="fa fa-lock"></i></CInputGroupText>
-                      <CFormInput type={ confirmPasswordVisible ? 'text' : 'password'} value={confirmedPassword} onChange={(e) => setConfirmedPassword(e.target.value)} placeholder="Confirme sua senha" autoComplete="password" minLength={8} maxLength={20} required />
+                      <CFormInput type={ confirmPasswordVisible ? 'text' : 'password'} value={confirmedPassword} onChange={(e) => {setConfirmedPassword(e.target.value); setPasswordsMatch(true);}} placeholder="Confirme sua senha" autoComplete="password" maxLength={20} invalid={!passwordsMatch} required />
                       <CInputGroupText onClick={toggleConfirmPasswordVisibility} style={{ cursor: 'pointer' }}>
                         {!confirmPasswordVisible && (<i class="fa fa-eye-slash"></i>)}
                         {confirmPasswordVisible && (<i class="fa fa-eye"></i>)}
                       </CInputGroupText>
+                      <CFormFeedback invalid>As senhas não correspondem</CFormFeedback>
                     </CInputGroup>
-
-
                     <div className='d-flex justify-content-center'>
-                      <button className={styles.btRegister}>Enviar</button>
+                      <button type="submit" className={styles.btRegister} disabled={loading} >{loading ? 'Registrando...' : 'Registrar'}</button>
                     </div>
                   </CForm>
                 </CCardBody>

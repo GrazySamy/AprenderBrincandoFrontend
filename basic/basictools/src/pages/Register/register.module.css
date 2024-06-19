@@ -19,7 +19,8 @@
   /* Error message styles */
   .error {
     color: red;
+    text-align: center;
+    font-style: italic;
     margin-top: 10px;
-    font-size: 14px;
   }
-  
+
